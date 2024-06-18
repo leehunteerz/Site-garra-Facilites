@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Garra facilites</title>
+  <meta name="description"
+    content="'Somos uma empresa especializada em serviços gerais e obras, comprometida em oferecer soluções de qualidade para as necessidades de nossos clientes. Com experiência e dedicação, realizamos desde pequenos reparos até grandes projetos de construção civil, sempre com foco na excelência e na satisfação do cliente. Conte conosco para transformar suas ideias em realidade.'" />
+  <meta name="keywords" content="Hidreletrica, construção, vendas, Hortolandia, Garra, obras, Produtos, serviços." />
+  <meta name="author" content="Garra facilites" />
+  <link rel="icon" href="/img/logo1.ico" type="image/x-icon" />
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:700|Playfair+Display+SC" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Style -->
+
+  <link rel="stylesheet" type="text/css" href="css/style2.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+
+</head>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+  <video id="myVideo" controls>
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+<div id="myModal" class="modal">
+  <div class="modal-content"> <video id="modalVideo" controls width="640" height="360"></video> </div>
+  <span class="close" onclick="fecharModal()">&times;</span>
+</div>
+
+<body class="light-mode">
+  <!-- menu  -->
+  <select id="home" class="js-scroll"></select>
+
+
+  <header class="header">
+    <div class="logo">
+      <a href="#"><img src="/img/logo-principal.png" alt="Logo" /></a>
+      <h3>GARRA FACILITES</h3>
+    </div>
+    <nav class="navbar js-menu">
+      <a href="/index.html#" class="active">Home</a>
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="mailto:EMAIL_AQUI?subject=Solicitação de Orçamento&body=Olá, gostaria de solicitar um orçamento para a construção."
+        class="btn-light">Orçamento</a>
+
+
+
+    </nav>
+    <button id="theme-toggle" class="theme-switcher">
+      <img src="/img/light.png" class="light-icon" />
+      <img src="/img/dark.png" class="dark-icon" style="display: none" />
+    </button>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  </header>
+
+
+  <!-- imagem abaixo do menu  -->
+  <main class="main-content">
+    <section class="Projects">
+      <div class="container">
+        <!-- menu links ↓↓↓↓↓ -->
+        <div class="items-links">
+          <span class="item-link menu-active" data-name="all">All TRABALHOS</span>
+          <span class="item-link" data-name="captacao">CAPTAÇÃO DE ÁGUA</span>
+          <span class="item-link" data-name="palete">PALETE</span>
+          <span class="item-link" data-name="carga">CONSTRUÇÃO CARGA ELEVADA</span>
+          <span class="item-link" data-name="pintura">PINTURA</span>
+          <span class="item-link" data-name="polimento">POLIMENTO E NIVELAMENTO</span>
+          <span class="item-link" data-name="tratamentos">TRATAMENTOS</span>
+          <span class="item-link" data-name="sistema">SISTEMA DE SEGURANÇA</span>
+          <span class="item-link" data-name="paisagismo">PAISAGISMO</span>
+          <span class="item-link" data-name="serralheria">SERRALHERIA</span>
+          <span class="item-link" data-name="projetos">PROJETOS</span>
+          <span class="item-link" data-name="ambiente">AMBIENTE</span>
+          <span class="item-link" data-name="estrutural">ESTRUTURAL</span>
+          <span class="item-link" data-name="alvenaria">ALVENARIA</span>
+          <span class="item-link" data-name="portas">PORTAS</span>
+          <span class="item-link" data-name="amarzem">AMARZEM</span>
+          <span class="item-link" data-name="deck">DECK</span>
+          <span class="item-link" data-name="manutecao">MANUTENÇÃO</span>
+          <span class="item-link" data-name="construcao">CONSTRUÇÃO</span>
+          <span class="item-link" data-name="acabamentos">ACABAMENTOS</span>
+          <span class="item-link" data-name="transporte">TRANSPORTE</span>
+          <span class="item-link" data-name="portao">PORTÃO</span>
+          <span class="item-link" data-name="video">VIDEOS</span>
+
+
+
+        </div>
+        <!-- filter imagem ↓↓↓↓ -->
+        <div class="gallery">
+
+
+
+          <div class="project-img" data-name="captacao">
+            <img id="myImg1" src="/img/img/capitação.jpg" alt="palete">
+            <div class="overlay">
+              <h4>CAPTAÇÃO DE ÁGUA PLUVIAL PARA RÉUSO.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg1"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="palete">
+            <img id="myImg2" src="/img/img/palete2.jpg" alt="palete">
+            <div class="overlay">
+              <h4>MONTAGEM DE ESTRUTURA DE PORTA PALETE.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg2"> View</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-img" data-name="palete">
+            <img id="myImg3" src="/img/img/palete3.jpg" alt="palete">
+            <div class="overlay">
+              <h4>MONTAGEM DE ESTRUTURA DE PORTA PALETE.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg3"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="carga">
+            <img id="myImg4" src="/img/img/Construção de equipamentos de elevaçao de carga.jpg"
+              alt="Construção de equipamentos de elevaçao de carga">
+            <div class="overlay">
+              <h4>CONSTRUÇÃO DE EQUIPAMENTO DE ELEVAÇÃO DE CARGA.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg4"> View</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="project-img" data-name="pintura">
+            <img id="myImg5" src="/img/img/pintura de pisos em epoxi.jpg" alt="pintura de pisos em epoxi">
+            <div class="overlay">
+              <h4>PINTURA DE PISOS EM EPÓXI.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg5"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="paisagismo">
+            <img id="myImg6" src="/img/img/paisagismo.jpg" alt="paisagismo">
+            <div class="overlay">
+              <h4>PAISAGISMO.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg6"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="serralheria">
+            <img id="myImg7" src="/img/img/serralheria (1).jpg" alt="serralheria">
+            <div class="overlay">
+              <h4>SERVIÇOS DE SERRALHERIA.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg7"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="serralheria">
+            <img id="myImg8" src="/img/img/serralheria (2).jpg" alt="serralheria">
+            <div class="overlay">
+              <h4>SERVIÇOS DE SERRALHERIA.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg8"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="serralheria">
+            <img id="myImg9" src="/img/img/serralheria (4).jpg" alt="serralheria">
+            <div class="overlay">
+              <h4>SERVIÇOS DE SERRALHERIA.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg9"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="projetos">
+            <img id="myImg10" src="/img/img/projeto ambientais e de sustentabilidade.jpg"
+              alt="projeto ambientais e de sustentabilidade">
+            <div class="overlay">
+              <h4>PROJETOS AMBIENTAIS E DE SUSTENTABILIDADES.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg10"> View</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <div class="project-img" data-name="ambiente">
+            <img id="myImg11" src="/img/img/ambiente em vidro.jpg" alt="ambiente em vidro">
+            <div class="overlay">
+              <h4>AMBIENTE EM VIDRO.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg11"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="estrutural">
+            <img id="myImg12" src="/img/img/cobertura eestrutural em ferragem.jpg"
+              alt="cobertura eestrutural em ferragem">
+            <div class="overlay">
+              <h4>COBERTURA ESTRUTURAL EM FERRAGEM.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg12"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="estrutural">
+            <img id="myImg13" src="/img/img/cobertura eestrutural em ferragem1.jpg"
+              alt="cobertura eestrutural em ferragem">
+            <div class="overlay">
+              <h4>COBERTURA ESTRUTURAL EM FERRAGEM.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg13"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="alvenaria">
+            <img id="myImg14" src="/img/img/galpao em alvenaria.jpg" alt="galpao em alvenaria">
+            <div class="overlay">
+              <h4>GALPÃO EM ALVENARIA.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg14"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="portas">
+            <img id="myImg15" src="/img/img/portas contra fogo.jpg" alt="portas contra fogo">
+            <div class="overlay">
+              <h4>PORTAS CONTRA FOGO.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg15"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="portas">
+            <img id="myImg16" src="/img/img/portas de vidros.jpg" alt="portas de vidros">
+            <div class="overlay">
+              <h4>PORTAS DE VIDRO.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg16"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="amarzem">
+            <img id="myImg17" src="/img/img/adequações de amarzem.jpg" alt="adequações de amarzem">
+            <div class="overlay">
+              <h4>ADEQUAÇÕES DE AMARZEM.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg17"> View</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="project-img" data-name="deck">
+            <img id="myImg18" src="/img/img/deck.jpg" alt="deck">
+            <div class="overlay">
+              <h4>DECK RIPADOS.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg18"> View</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="project-img" data-name="deck">
+            <img id="myImg19" src="/img/img/deck1.jpg" alt="deck">
+            <div class="overlay">
+              <h4>DECK RIPADOS.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg19"> View</a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="project-img" data-name="manutecao">
+            <img id="myImg20" src="/img/img/manutençao em sistema de incendio e spk.jpg"
+              alt="manutençao em sistema de incendio e spk">
+            <div class="overlay">
+              <h4>MANUTENÇÃO EM SISTEMA DE INCENDIOS E SPK.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg20"> View</a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="project-img" data-name="projetos">
+            <img id="myImg21" src="/img/img/projetos ilustração (1).jpg" alt="projetos ilustração">
+            <div class="overlay">
+              <h4>PROJETO ILUSTRAÇÃO SKETCHUP.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg21"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="projetos">
+            <img id="myImg22" src="/img/img/projetos ilustração (2).jpg" alt="projetos ilustração">
+            <div class="overlay">
+              <h4>PROJETO ILUSTRAÇÃO SKETCHUP.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg22"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="projetos">
+            <img id="myImg23" src="/img/img/projetos ilustração (3).jpg" alt="projetos ilustração">
+            <div class="overlay">
+              <h4>PROJETO ILUSTRAÇÃO SKETCHUP.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg23"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="construcao">
+            <img id="myImg24" src="/img/img/construçao.jpg" alt="construçao">
+            <div class="overlay">
+              <h4>CONSTRUÇÃO.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg24"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="construcao">
+            <img id="myImg25" src="/img/img/construção.jpg" alt="construçao">
+            <div class="overlay">
+              <h4>CONSTRUÇÃO.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg25"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="acabamentos">
+            <img id="myImg26" src="/img/img/acabamentos.jpg" alt="acabamentos">
+            <div class="overlay">
+              <h4>ACABAMENTOS.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg26"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="transporte">
+            <img id="myImg27" src="/img/img/transporte especial.jpg" alt="transporte especial">
+            <div class="overlay">
+              <h4>TRANSPORTE ESPECIAL.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg27"> View</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="project-img" data-name="estrutural">
+            <img id="myImg28" src="/img/img/telhados1.jpg" alt="telhados">
+            <div class="overlay">
+              <h4>COBERTURA ESTRUTURAL EM FERRAGEM.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg28"> View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="estrutural">
+            <img id="myImg29" src="/img/img/telhados.jpg" alt="telhados">
+            <div class="overlay">
+              <h4>COBERTURA ESTRUTURAL EM FERRAGEM.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg29"> View</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="project-img" data-name="portao">
+            <img id="myImg30" src="/img/img/portao deslizante sem trilhos.jpg" alt="portao deslizante sem trilhos">
+            <div class="overlay">
+              <h4>COBERTURA ESTRUTURAL EM FERRAGEM.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg30"> View</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+<!-- AQUI ESTA OS VIDEOS ABAIXO -->
+
+          <!-- <div class="project-img" data-name="video">
+            <img id="myImg6" src="/img/img/Sistema-segurança.mp4" alt="">
+            <div class="overlay">
+              <h4>SISTEMA DE SEGURANÇA CONTRA QUEDA.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="myImg6"> View</a>
+              </div>
+            </div>
+          </div> -->
+
+          <!--           
+          <div class="project-img" data-name="video">
+
+            <video id="modalVideo" width="auto" height="340" autoplay muted>
+              <source src="img/img/Polimento e nivelamento.mp4" type="video/mp4">
+            </video>
+            <div id="caption"></div>
+            <div class="overlay">
+              <h4>POLIMENTO E NIVELAMENTO DE PISO E TRATAMENTOS DE JUNTAS DE DILATAÇÃO.</h4>
+              <div class="action-aria">
+                <a href="#" class="btn" data-img="modalVideo" onclick="abrirModalVideo('myVideo')">
+                  View
+                </a>
+              </div>
+            </div>
+          </div> -->
+
+
+
+
+
+
+
+
+
+
+
+          <!-- MODAL -->
+
+          <div id="myModal" class="modal">
+            <div class="modal-content"> <video id="modalVideo" controls width="640" height="360"></video> </div>
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+          </div>
+          
+          <!-- END MDOAL  -->
+
+
+        </div>
+
+      </div>
+    </section>
+
+    </section>
+  </main>
+
+  <button id="backToTop" onclick="scrollToTop()">↑</button>
+  <footer class="footer">
+    <h3>® Todos os direitos reservados.</h3>
+    <h2 class="text-center">Garra Facilites <span>2024</span></h2>
+  </footer>
+
+
+
+
+  <script src="script.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
