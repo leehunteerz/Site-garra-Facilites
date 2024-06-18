@@ -1,53 +1,34 @@
-// Obtem o botão de abrir modal
-var openModalBtn = document.getElementById('openModalBtn');
-
-// Obtem o modal
-var modal = document.getElementById('myModal');
-
-// Obtem o elemento de fechar do modal
-var closeModalBtn = document.getElementById('closeModalBtn');
-
-// Abre o modal ao clicar no botão
-openModalBtn.onclick = function () {
-    modal.style.display = "block";
-}
-
-// Fecha o modal ao clicar no botão de fechar (x)
-closeModalBtn.onclick = function () {
-    modal.style.display = "none";
-}
-
-// Fecha o modal ao clicar fora dele
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
+var modal1 = document.getElementById("myModal1");
+var btn1 = document.getElementById("openModalBtn1");
+var span1 = document.getElementById("closeModalBtn1");
+var modal2 = document.getElementById("myModal2");
+var btn2 = document.getElementById("openModalBtn2");
+var span2 = document.getElementById("closeModalBtn2");
 
 
 document.addEventListener("DOMContentLoaded", (event) => {
-    // Desativa o menu de contexto (botão direito do mouse) apenas nas imagens
     document.querySelectorAll("img").forEach((img) => {
         img.addEventListener("contextmenu", function (e) {
             e.preventDefault();
         });
 
-        // Desativa a ação de arrastar imagens
         img.addEventListener("dragstart", (e) => {
             e.preventDefault();
         });
     });
 
-    // Desativa Ctrl+S e Ctrl+Shift+I (opcional)
     document.addEventListener("keydown", (e) => {
-        if (e.ctrlKey && (e.key === "s" || e.key === "S" || (e.shiftKey && (e.key === "I" || e.key === "i")))) {
+        if (
+            e.ctrlKey &&
+            (e.key === "s" ||
+                e.key === "S" ||
+                (e.shiftKey && (e.key === "I" || e.key === "i")))
+        ) {
             e.preventDefault();
         }
     });
 });
 
-// Mostrar ou ocultar o botão dependendo da rolagem da página
 window.onscroll = function () {
     var button = document.getElementById("backToTop");
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -64,3 +45,20 @@ function scrollToTop() {
         behavior: "smooth",
     });
 }
+
+// botão dark e light
+document.getElementById("theme-toggle").addEventListener("click", function () {
+    var lightIcon = document.querySelector(".light-icon");
+    var darkIcon = document.querySelector(".dark-icon");
+
+    this.classList.toggle("dark-mode");
+    document.body.classList.toggle("dark-mode");
+
+    if (this.classList.contains("dark-mode")) {
+        lightIcon.style.display = "none";
+        darkIcon.style.display = "block";
+    } else {
+        lightIcon.style.display = "block";
+        darkIcon.style.display = "none";
+    }
+});
